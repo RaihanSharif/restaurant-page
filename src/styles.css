@@ -1,3 +1,17 @@
 body {
     background-color: aquamarine;
 }
+
+ul {
+    list-style: none;
+}
+
+nav ul {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+}
+
+button {
+    padding: 1rem 2rem;
+}

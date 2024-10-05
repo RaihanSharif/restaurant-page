@@ -6,3 +6,5 @@ const image = document.createElement("img");
 image.src = odinImg;
 
 document.body.appendChild(image);
+
+alert("whoa there!");
