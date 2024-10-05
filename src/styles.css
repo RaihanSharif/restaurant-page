@@ -1,5 +1,9 @@
 body {
     background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
 }
 
 ul {
@@ -14,4 +18,9 @@ nav ul {
 
 button {
     padding: 1rem 2rem;
+    background-color: antiquewhite;
+}
+
+div {
+    border: 5px red solid;
 }
