@@ -49,3 +49,5 @@ content.appendChild(title);
 content.appendChild(introContainer);
 content.appendChild(hoursContainer);
 content.appendChild(addressContainer);
+
+export {content};

@@ -1,8 +1,9 @@
 import "./styles.css";
 import {content} from "./home.js";
-// import odinImg from "./resources/odin.png";
+// on page load display content module i.e. home
+// on button click home, same
 
-//const image = document.createElement("img");
-//image.src = odinImg;
+// on button click menu, display menu module
 
-// document.body.appendChild(image);
+// on button click about, display about page
+console.log(content);
