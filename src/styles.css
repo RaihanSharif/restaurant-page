@@ -12,6 +12,7 @@ ul {
     list-style: none;
 }
 
+
 nav ul {
     display: flex;
     gap: 3rem;
@@ -24,5 +25,21 @@ button {
 }
 
 div {
-    border: 5px red solid;
+    border: 2px red solid;
+
+}
+
+.icon {
+    width: 100px;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+#content div {
+    padding: 1rem;
 }
