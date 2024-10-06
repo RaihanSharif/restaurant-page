@@ -4,6 +4,8 @@ body {
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
+    max-width: 90%;
+    margin: auto;
 }
 
 ul {
