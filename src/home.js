@@ -41,13 +41,13 @@ addressContainer.appendChild(addressIcon);
 const addressLine = document.createElement("p");
 addressLine.textContent = "123 Valhalla road, Asgard, Yggdrasil";
 addressContainer.appendChild(addressLine);
-// addressContainer.appendChild(document.createTextNode("123 Valhalla road, Asgard, Yggdrasil"));
-// addressContainer.textContent = "123 Valhalla road, Asgard, Yggdrasil";
 
-// content.appendChild(title);
-// content.appendChild(introContainer);
-// content.appendChild(hoursContainer);
-// content.appendChild(addressContainer);
 
-export {title as homeTitle, introContainer as homeIntro, 
-    hoursContainer as homeHours, addressContainer as homeAddress};
+function home(container) {
+    container.appendChild(title);
+    container.appendChild(introContainer);
+    container.appendChild(hoursContainer);
+    container.appendChild(addressContainer);
+}
+
+export {home}
