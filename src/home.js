@@ -1,6 +1,5 @@
 import addressImg from "./resources/odin.png";
 
-const content = document.getElementById("content");
 const title = document.createElement("h1");
 title.textContent = "Odin's mead hall!";
 
@@ -45,9 +44,10 @@ addressContainer.appendChild(addressLine);
 // addressContainer.appendChild(document.createTextNode("123 Valhalla road, Asgard, Yggdrasil"));
 // addressContainer.textContent = "123 Valhalla road, Asgard, Yggdrasil";
 
-content.appendChild(title);
-content.appendChild(introContainer);
-content.appendChild(hoursContainer);
-content.appendChild(addressContainer);
+// content.appendChild(title);
+// content.appendChild(introContainer);
+// content.appendChild(hoursContainer);
+// content.appendChild(addressContainer);
 
-export {content};
+export {title as homeTitle, introContainer as homeIntro, 
+    hoursContainer as homeHours, addressContainer as homeAddress};

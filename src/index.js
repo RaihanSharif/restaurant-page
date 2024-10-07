@@ -1,9 +1,26 @@
 import "./styles.css";
-import {content} from "./home.js";
-// on page load display content module i.e. home
-// on button click home, same
+import {homeTitle, homeIntro, homeHours, homeAddress} from "./home.js";
+import {title, menuContainer} from "./menu.js";
 
-// on button click menu, display menu module
 
-// on button click about, display about page
+const content = document.getElementById("content");
+
+const homeButton = document.getElementById("home");
+const menuButton = document.getElementById("menu");
+
+homeButton.addEventListener("click", () => {
+    content.innerHTML = "";
+    content.appendChild(homeTitle);
+    content.appendChild(homeIntro);
+    content.appendChild(homeHours);
+    content.appendChild(homeAddress);
+});
+homeButton.click();
+
+menuButton.addEventListener("click", () => {
+    content.innerHTML = "";
+    content.appendChild(title);
+    content.appendChild(menuContainer);
+});
+
 console.log(content);
