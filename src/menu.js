@@ -21,4 +21,9 @@ menuItems.forEach(timeText => {
 });
 menuContainer.appendChild(menuUl);
 
-export {title, menuContainer};
+const menu = {
+    title,
+    menuContainer,
+}
+
+export {menu};

@@ -1,6 +1,6 @@
 import "./styles.css";
 import {homeTitle, homeIntro, homeHours, homeAddress} from "./home.js";
-import {title, menuContainer} from "./menu.js";
+import {menu} from "./menu.js";
 
 
 const content = document.getElementById("content");
@@ -19,8 +19,8 @@ homeButton.click();
 
 menuButton.addEventListener("click", () => {
     content.innerHTML = "";
-    content.appendChild(title);
-    content.appendChild(menuContainer);
+    content.appendChild(menu.title);
+    content.appendChild(menu.menuContainer);
 });
 
 console.log(content);
