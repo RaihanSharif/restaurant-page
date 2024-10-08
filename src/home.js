@@ -1,4 +1,3 @@
-// import addressImg from "./resources/odin.png";
 
 const title = document.createElement("h1");
 title.textContent = "Odin's mead hall!";
@@ -36,12 +35,6 @@ openingTimes.forEach(timeText => {
 hoursContainer.appendChild(hoursUl);
 
 const addressContainer = document.createElement("div");
-
-// const addressIcon = document.createElement("img");
-// addressIcon.classList.add("icon");
-// addressIcon.src = addressImg; //TODO: this ia placeholder image
-// addressContainer.appendChild(addressIcon);
-
 
 const addressLine = document.createElement("p");
 addressLine.textContent = "123 Valhalla road, Asgard, Yggdrasil";
