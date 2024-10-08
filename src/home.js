@@ -1,4 +1,4 @@
-import addressImg from "./resources/odin.png";
+// import addressImg from "./resources/odin.png";
 
 const title = document.createElement("h1");
 title.textContent = "Odin's mead hall!";
@@ -12,6 +12,10 @@ introPara.textContent = "Welcome, warriors and weary travelers, to Odin's hall! 
 introContainer.appendChild(introPara);
 
 const hoursContainer = document.createElement("div");
+const hoursTitle = document.createElement("h2");
+hoursTitle.textContent = "Opening Times";
+hoursContainer.appendChild(hoursTitle);
+
 const openingTimes = [
     'Monday: 8am - 8pm',
     'Tuesday: 8am - 8pm',
@@ -32,10 +36,11 @@ openingTimes.forEach(timeText => {
 hoursContainer.appendChild(hoursUl);
 
 const addressContainer = document.createElement("div");
-const addressIcon = document.createElement("img");
-addressIcon.classList.add("icon");
-addressIcon.src = addressImg; //TODO: this ia placeholder image
-addressContainer.appendChild(addressIcon);
+
+// const addressIcon = document.createElement("img");
+// addressIcon.classList.add("icon");
+// addressIcon.src = addressImg; //TODO: this ia placeholder image
+// addressContainer.appendChild(addressIcon);
 
 
 const addressLine = document.createElement("p");

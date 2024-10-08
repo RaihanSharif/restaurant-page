@@ -19,7 +19,7 @@ function menuBuilder(items) {
 };
 
 const appetizerContainer = document.createElement("div");
-const appetizerHeader = document.createElement("h3");
+const appetizerHeader = document.createElement("h2");
 appetizerHeader.textContent = "Appetizers";
 appetizerContainer.appendChild(appetizerHeader);
 
@@ -33,7 +33,7 @@ appetizerContainer.appendChild(menuBuilder(appetizers));
 
 
 const mainCourseContainer = document.createElement("div");
-const mainCourseHeader = document.createElement("h3");
+const mainCourseHeader = document.createElement("h2");
 mainCourseHeader.textContent = "Main Courses";
 mainCourseContainer.appendChild(mainCourseHeader);
 
@@ -47,7 +47,7 @@ const mainCourses = {
 mainCourseContainer.appendChild(menuBuilder(mainCourses));
 
 const drinksContainer = document.createElement("div");
-const drinksHeader = document.createElement("h3");
+const drinksHeader = document.createElement("h2");
 drinksHeader.textContent = "Drinks";
 drinksContainer.appendChild(drinksHeader);
 
