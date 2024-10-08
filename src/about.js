@@ -14,8 +14,8 @@ function teamMemberBuilder(name, description) {
 }
 
 const moe = teamMemberBuilder("Moe Sizlack", "Moe is our handsome bartender, who is always pleased to see new faces.");
-const barney = teamMemberBuilder("Barney", "If you need advice on what to get from the bar, Barney is your man.");
-const ned = teamMemberBuilder("Ned", "This is the man to bring the fun. You'll never be bored when Ned is about.")
+const barney = teamMemberBuilder("Barney Gumble", "If you need advice on what to get from the bar, Barney is your man.");
+const ned = teamMemberBuilder("Ned Flanders", "This is the man to bring the fun. You'll never be bored when Ned is about.")
 
 const about = {
     title,
