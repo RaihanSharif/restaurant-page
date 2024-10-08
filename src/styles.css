@@ -20,14 +20,28 @@
     overflow-wrap: break-word;
   }
 
+@font-face {
+  font-family: Norse-KaWl;
+  src: url("./resources/Norse-KaWl.otf");
+}
+
+@font-face {
+  font-family: NorseBold-2Kge;
+  src: url("./resources/NorseBold-2Kge.otf");
+}
+
 body {
-    background-color: aquamarine;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 2rem;
-    max-width: 90%;
-    margin: auto;
+  background-image: url("./resources/parchment.jpg");
+
+  font-family: NorseBold-2Kge;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 90%;
+  margin: auto;
+  font-size: 25px;
 }
 
 ul {
@@ -47,11 +61,10 @@ nav ul {
 
 button {
     padding: 1rem 2rem;
-    /*background-color: antiquewhite; */
 }
 
 div {
-    border: 2px red solid;
+    /* border: 2px red solid; */
 
 }
 
