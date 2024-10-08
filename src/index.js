@@ -18,6 +18,8 @@ menuButton.addEventListener("click", () => {
     content.innerHTML = "";
     content.appendChild(menu.title);
     content.appendChild(menu.appetizerContainer);
+    content.appendChild(menu.mainCourseContainer);
+    content.appendChild(menu.drinksContainer);
 });
 
 console.log(content);
