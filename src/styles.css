@@ -34,6 +34,10 @@ ul {
     list-style: none;
 }
 
+.item-name {
+  font-weight: bold;
+}
+
 
 nav ul {
     display: flex;

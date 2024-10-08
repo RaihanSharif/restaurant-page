@@ -1,29 +1,41 @@
-import addressImg from "./resources/odin.png";
-
 const title = document.createElement("h1");
-title.textContent = "Odin's mead hall!";
+title.textContent = "Menu";
 
-const menuItems = [
-    'asdf',
-    'asdf',
-    'asdf',
-    'asdf',
-]
+const appetizerContainer = document.createElement("div");
+const appetizerHeader = document.createElement("h3");
+appetizerHeader.textContent = "Appetizers";
 
-const menuContainer = document.createElement("div");
-const menuUl = document.createElement("ul");
 
-menuItems.forEach(timeText => {
-    const li = document.createElement("li");
-    const textNode = document.createTextNode(timeText);
-    li.appendChild(textNode);
-    menuUl.appendChild(li);
-});
-menuContainer.appendChild(menuUl);
+// a function that creates a full order list with the menu item and it's description.
+// take in a set of key value pairs.
+function menuBuilder(items) {
+    const menuOl = document.createElement("ol");
+    for(const [key, value] of Object.entries(appetizers)) {
+        const li = document.createElement("li");
+        const span = document.createElement("span");
+        span.textContent = key;
+        span.classList.add("item-name");
+        const description = document.createTextNode(` - ${value}`);
+        li.appendChild(span);
+        li.appendChild(description);
+        menuOl.appendChild(li);
+        }
+    return menuOl;
+}
 
+const appetizers = {
+    ["Freya's Fennel Bread"]: "Fresh rye bread with whipped honey butter and goat cheese.",
+    ["Mjölnir Mussels"]: "sels in a mead and garlic broth.",
+    ["Yggdrasil Root Soup"]: "Roasted root vegetable soup with crispy shallots.",
+}
+
+
+
+appetizerContainer.appendChild(appetizerHeader);
+appetizerContainer.appendChild(menuBuilder(appetizers));
 const menu = {
     title,
-    menuContainer,
+    appetizerContainer,
 }
 
 export {menu};

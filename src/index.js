@@ -17,7 +17,7 @@ homeButton.click();
 menuButton.addEventListener("click", () => {
     content.innerHTML = "";
     content.appendChild(menu.title);
-    content.appendChild(menu.menuContainer);
+    content.appendChild(menu.appetizerContainer);
 });
 
 console.log(content);
